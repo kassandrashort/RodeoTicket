@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="createRodeo"
+    errors="0" failures="0" hostname="" id="" package="createRodeo" skipped="0"
+    tests="1" time="9.484" timestamp="Fri, 21 Sep 2018 20:58:32 GMT">
+  
+    <testcase name="Create Rodeo" classname="createRodeo" time="9.484" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

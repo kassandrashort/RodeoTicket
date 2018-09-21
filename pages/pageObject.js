@@ -4,8 +4,9 @@ module.exports = {
 
         //log in
         login: 'a[id="logInDrawer"]',
-        username: 'input[name="user"]',
+        username: 'input[name="username"]',
         password: 'input[name="password"]',
+        loginButton: 'button[name="action"]',
 
         //current races page
         createRodeo: 'a[data-test="create-an-event"]',
@@ -21,24 +22,25 @@ module.exports = {
         address: 'input[id="street"]',
         city: 'input[id="city"]',
         state: 'select[id="state_id"]',
-            alabama: 'option[value="1"]',
-            georgia: 'option[value="10"]',
-            maryland: 'option[value="20"]',
+            alabama: 'select[id="state_id"] option[value="1"]',
+            georgia: 'select[id="state_id"] option[value="10"]',
+            maryland: 'select[id="state_id"] option[value="20"]',
         province: 'input[id="province"]',
         country: 'select[id="country"]',
+            usa: 'select[id="country"] option[value="USA"]',
         zip: 'input[id="zip"]',
         timeZone: 'select[id="timezone_id"]',
-            denver: 'option[value="1"]',
-            ny: 'option[value="2"]',
-            chicago: 'option[value="3"]',
-            phoenix: 'option[value="4"]',
-            la: 'option[value="5"]',
-            anchorage: 'option[value="6"]',
-            honolulu: 'option[value="7"]',
+            denver: 'select[id="timezone_id"] option[value="1"]',
+            ny: 'select[id="timezone_id"] option[value="2"]',
+            chicago: 'select[id="timezone_id"] option[value="3"]',
+            phoenix: 'select[id="timezone_id"] option[value="4"]',
+            la: 'select[id="timezone_id"] option[value="5"]',
+            anchorage: 'select[id="timezone_id"] option[value="6"]',
+            honolulu: 'select[id="timezone_id"] option[value="7"]',
         dateTime: 'input[id="event-datetime"]',
 
         //basic rodeo info
-        description: '#tinymce > p',
+        description: '#tinymce',
         url: 'input[id="external_url"]',
 
         //contact info
@@ -70,7 +72,7 @@ module.exports = {
             teamLimit: 'input[name="cat_team_limit_1"]',
 
             //remove category
-            removeCat: '',
+    
 
         //registration info
         openRegLater: 'input[id="open-reg-later"]',
@@ -81,15 +83,18 @@ module.exports = {
         regEnds: 'input[id="registration-ends"]',
 
         //checks payable information
-        payee: 'select[id="payee-select"]',
-            existingPayee: 'option[value="existing"]',
+        payee: 'select[id="payee_select"]',
+            existingPayee: 'select[id="payee_select"] option[value="existing"]',
                 //modal?
-            createpayee: 'option[value="new"]',
-                entityName: '',
-                payeeAddress: '',
-                payeeCity: '',
-                payeeState: '',
-                payeeZip: '',
+            createpayee: 'select[id="payee_select"] option[value="new"]',
+                entityName: 'input[id="payee-name"]',
+                payeeAddress: 'input[id=payee-address"]',
+                payeeCity: 'input[id=payee-city"]',
+                payeeState: 'select[id="payee_state_id"]',
+                    alabama: 'select[id="payee_state_id"] option[value="1"]',
+                    georgia: 'select[id="payee_state_id"] option[value="10"]',
+                    maryland: 'select[id="payee_state_id"] option[value="20"]',
+                payeeZip: 'input[id=payee-zip"]',
                 
 
         //terms and conditions
@@ -97,6 +102,25 @@ module.exports = {
 
         //save
         save: 'button[id="save-button"]',
+
+        //list of current events
+        currentEvents: 'select[class="form-control"]',
+            howdy: 'select[class="form-control"] option[value="howdy"]',
+            testing: 'select[class="form-control"] option[value="testing"]',
+            yeehaw: 'select[class="form-control"] option[value="yeehaw"]',
+
+        //to next year or to different event
+        copyType: 'select[id="copy-type"] option[value="0"]',
+            nextYear: 'select[id="copy-type"] option[value="2"]',
+            difRodeo: 'select[id="copy-type"] option[value="1"]',
+
+
+        //venue and seat arrangements
+        // venue: {
+        //     selector: '/html/body/div[12]/div/h1/a',
+        //     locateStrategy: 'xpath'
+        // }
+
 
     }
 }

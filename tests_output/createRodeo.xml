@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="createRodeo"
+    errors="1" failures="0" hostname="" id="" package="createRodeo" skipped="0"
+    tests="1" time="0.01000" timestamp="Fri, 21 Sep 2018 19:29:49 GMT">
+  
+    <testcase name="Create Rodeo" classname="createRodeo" time="0.01000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Create Rodeo / Create Rodeo]:
+
+  TypeError: Cannot read property &#39;toString&#39; of undefined
+    at isElementCommand (/usr/local/lib/node_modules/nightwatch/lib/page-object/command-wrapper.js:131:42)
+    at Page.click (/usr/local/lib/node_modules/nightwatch/lib/page-object/command-wrapper.js:72:28)
+    at module.exports (/Users/kassandrashort/DevMountain/RodeoTicket/test-assets/createFunction.js:15:10)
+    at Create Rodeo.createData.valid.forEach.test (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:18:13)
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Create Rodeo (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:17:26)
+    at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:863:30
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>
