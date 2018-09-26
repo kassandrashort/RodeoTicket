@@ -1,5 +1,9 @@
-module.exports = (pageObject, rodeoInfo) => {
+//https://dmutah.atlassian.net/browse/Q7K-84
+//RODEO WITHOUT REGISTRATION
+//RODEO WITH CATEGORIES
+//RODEO WITHOUT PAYEE
 
+module.exports = (pageObject, rodeoInfo) => {
     pageObject
         .click('@login')
         .waitForElementVisible('@username', 10000)
@@ -16,7 +20,6 @@ module.exports = (pageObject, rodeoInfo) => {
         .setValue('@zip', rodeoInfo.fields.zip)
         .click(rodeoInfo.fields.timeZone)
         .setValue('@dateTime', rodeoInfo.fields.dateTime)
-        // .click('@description')
         .api.frame('event-description_ifr')
     pageObject
         .setValue('@description', rodeoInfo.fields.description)
@@ -26,16 +29,21 @@ module.exports = (pageObject, rodeoInfo) => {
         .setValue('@firstName', rodeoInfo.fields.firstName)
         .setValue('@lastName', rodeoInfo.fields.lastName)
         .setValue('@email', rodeoInfo.fields.email)
+        //takes away registration form
         .click('@createReg')
+        .click('@addCategory')
+        .setValue('@catName', rodeoInfo.fields.catName)
+        .setValue('@catIndPrice', rodeoInfo.fields.catIndPrice)
+        .setValue('@partLimit', rodeoInfo.fields.partLimit)
+        .setValue('@minAge', rodeoInfo.fields.minAge)
+        .setValue('@maxAge', rodeoInfo.fields.maxAge)
         .setValue('@initials', rodeoInfo.fields.initials)
         .click('@save')
     pageObject
         // .expect.element('@venue').text.to.contain(rodeoInfo.fields.rodeoName)
-
+        // figure this out.
     pageObject.api.perform(function (done) {
         console.log('success')
         done()
     })
-
-
 }
