@@ -17,15 +17,7 @@ module.exports = (pageObject, rodeoInfo) => {
         .setValue('@rodeoName', rodeoInfo.rodeoName)
         .setValue('@address', rodeoInfo.address)
         .setValue('@city', rodeoInfo.city)
-    pageObject
-        .click('@state')
-        pageObject.api.pause(1000)
         .click(rodeoInfo.state)
-        pageObject.api.Keys.ENTER
-        pageObject.api.pause(1000)
-        // .click('@georgia')
-        //.api.keys([pageObject.api.Keys.DOWN_ARROW, pageObject.api.Keys.DOWN_ARROW, pageObject.api.Keys.ENTER])
-    pageObject
         .click(rodeoInfo.country)
         .setValue('@zip', rodeoInfo.zip)
         .click(rodeoInfo.timeZone)
@@ -64,5 +56,6 @@ module.exports = (pageObject, rodeoInfo) => {
         console.log('success')
         done()
     })
+    pageObject.api.end()
 
 }

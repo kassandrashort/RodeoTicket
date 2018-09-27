@@ -1,6 +1,6 @@
 //https://dmutah.atlassian.net/browse/Q7K-88
 //RODEO WITH REGISTRATION
-//RODEO WITH WITHOUT CATEGORIES
+//RODEO WITHOUT CATEGORIES
 //RODEO WITH EXISTING PAYEE
 
 module.exports = (pageObject, rodeoInfo) => {
@@ -17,15 +17,7 @@ module.exports = (pageObject, rodeoInfo) => {
         .setValue('@rodeoName', rodeoInfo.rodeoName)
         .setValue('@address', rodeoInfo.address)
         .setValue('@city', rodeoInfo.city)
-    pageObject
-        .click('@state')
-        pageObject.api.pause(1000)
         .click(rodeoInfo.state)
-        pageObject.api.Keys.ENTER
-        pageObject.api.pause(1000)
-        // .click('@georgia')
-        //.api.keys([pageObject.api.Keys.DOWN_ARROW, pageObject.api.Keys.DOWN_ARROW, pageObject.api.Keys.ENTER])
-    pageObject
         .click(rodeoInfo.country)
         .setValue('@zip', rodeoInfo.zip)
         .click(rodeoInfo.timeZone)
@@ -44,7 +36,7 @@ module.exports = (pageObject, rodeoInfo) => {
         .setValue('@waiver', rodeoInfo.waiver)
         //use existing payee
         .click('@existingPayee')
-        .waitForElementPresent('@payee1', 500)
+        .waitForElementPresent('@payee2', 500)
         .click('@payee1')
         //click save
         .setValue('@initials', rodeoInfo.initials)
@@ -60,5 +52,6 @@ module.exports = (pageObject, rodeoInfo) => {
         console.log('success')
         done()
     })
+    pageObject.api.end()
 
 }

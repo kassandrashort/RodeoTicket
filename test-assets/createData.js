@@ -4,7 +4,7 @@ module.exports = {
         {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'noreg cat 2',
+            rodeoName: 'noreg cat 15',
             address: '5678 rhubard rd',
             city: 'los angelos',
             state: '@alabama',
@@ -19,14 +19,33 @@ module.exports = {
             email: 're.directorKassandra@gmail.com',
             waiver: 'waiver',
             initials: 'fl',
-        }
+        },
+        // {
+        //     username: 're.directorKassandra@gmail.com',
+        //     password: 'candice1',
+        //     rodeoName: 'noreg cat 5',
+        //     address: '5678 rhubard rd',
+        //     city: 'los angelos',
+        //     state: '@alabama',
+        //     country: '@usa',
+        //     zip: '90001',
+        //     timeZone: '@denver',
+        //     dateTime: '12/27/2018 11:00',
+        //     description: 'yay a new race!',
+        //     url: 'google.com',
+        //     firstName: 'first name',
+        //     lastName: 'last name',
+        //     email: 're.directorKassandra@gmail.com',
+        //     waiver: 'waiver',
+        //     initials: 'fl',
+        // }
     ],
     valid85: [
         {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'noreg nocat 1',
-            address: '5678 rhubard rd',
+            rodeoName: 'noreg nocat 5',
+            address: 'blah blah',
             city: 'los angelos',
             state: '@alabama',
             country: '@usa',
@@ -40,15 +59,14 @@ module.exports = {
             email: 're.directorKassandra@gmail.com',
             waiver: 'waiver',
             initials: 'fl',
-            
         }
     ],
     valid86: [
        {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'existing category 2',
-            address: '5678 rhubard rd',
+            rodeoName: 'existing category 4',
+            address: 'okokok',
             city: 'los angelos',
             state: '@alabama',
             country: '@usa',
@@ -75,7 +93,7 @@ module.exports = {
         {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'new payee category 7',
+            rodeoName: 'new payee category 8',
             address: '1234 w',
             city: 'birmingham',
             state: '@alabama',
@@ -97,11 +115,11 @@ module.exports = {
             maxAge: '30',
             regEnds: '01/27/2019 09:00',
             waiver: 'waiver',
-            entityName: 'valid',
+            entityName: 'ok this is new',
             payeeAddress: '1234',
             payeeCity: 'provo',
             payeeState: '@georgia',
-            payeeZip: '23483',
+            payeeZip: '23433',
             initials: 'hi',
         }
     ],
@@ -110,7 +128,7 @@ module.exports = {
         {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'existing payee nocat 1',
+            rodeoName: 'existing payee nocat 2',
             address: '5678 rhubard rd',
             city: 'los angelos',
             state: '@alabama',
@@ -123,15 +141,16 @@ module.exports = {
             firstName: 'first name',
             lastName: 'last name',
             email: 're.directorKassandra@gmail.com',
+            regEnds: '01/27/2019 09:00',
             waiver: 'waiver',
-            initials: 'fl',
+            initials: 'rr',
         }
     ],
     valid89: [
         {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'new payee nocat 1',
+            rodeoName: 'new payee nocat 2',
             address: '5678 rhubard rd',
             city: 'los angelos',
             state: '@alabama',
@@ -144,8 +163,14 @@ module.exports = {
             firstName: 'first name',
             lastName: 'last name',
             email: 're.directorKassandra@gmail.com',
+            regEnds: '01/27/2019 09:00',
             waiver: 'waiver',
-            initials: 'fl',
+            entityName: 'new oayeeee',
+            payeeAddress: '1234',
+            payeeCity: 'provfdfo',
+            payeeState: '@georgia',
+            payeeZip: '23483',
+            initials: 'll',
         }
     ],
 

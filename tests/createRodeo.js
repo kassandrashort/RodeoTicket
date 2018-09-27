@@ -11,7 +11,7 @@ module.exports = {
     beforeEach: browser => {
         pageObject = browser.page.pageObject()
         pageObject.navigate()
-        .waitForElementVisible('@login', 5000)
+        .waitForElementVisible('@login', 50000)
     },
     after: browser => {
         browser.end()
@@ -22,7 +22,7 @@ module.exports = {
             case84(pageObject, test)
         })
     },
-    // //https://dmutah.atlassian.net/browse/Q7K-85
+    //https://dmutah.atlassian.net/browse/Q7K-85
     'Create Rodeo w/o Registration w/ Category': browser => {
         createData.valid85.forEach(test => {
             case85(pageObject, test)
@@ -34,23 +34,23 @@ module.exports = {
             case86(pageObject, test)
         })
     },
-    // //https://dmutah.atlassian.net/browse/Q7K-87
-    'Create Rodeo w/o Registration w/ Category': browser => {
+    //https://dmutah.atlassian.net/browse/Q7K-87
+    'Create Rodeo w/ New Payee w/ Category': browser => {
         createData.valid87.forEach(test => {
             case87(pageObject, test)
         })
     },
-    // //https://dmutah.atlassian.net/browse/Q7K-88
-    'Create Rodeo w/o Registration w/ Category': browser => {
+    //https://dmutah.atlassian.net/browse/Q7K-88
+    'Create Rodeo w/ Existing Payee w/o Category': browser => {
         createData.valid88.forEach(test => {
             case88(pageObject, test)
         })
     },
-    // //https://dmutah.atlassian.net/browse/Q7K-89
-    'Create Rodeo w/o Registration w/ Category': browser => {
+    //https://dmutah.atlassian.net/browse/Q7K-89
+    'Create Rodeo w/ New Payee w/o Category': browser => {
         createData.valid89.forEach(test => {
             case89(pageObject, test)
         })
     },
 
-}
+ }

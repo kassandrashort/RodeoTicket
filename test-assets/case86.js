@@ -1,6 +1,6 @@
 //https://dmutah.atlassian.net/browse/Q7K-86
 //RODEO WITH REGISTRATION
-//RODEO WITH CATEGORY
+//RODEO WITH INDIVIDUAL CATEGORY
 //RODEO WITH EXISTING PAYEE
 
 module.exports = (pageObject, rodeoInfo) => {
@@ -60,4 +60,5 @@ module.exports = (pageObject, rodeoInfo) => {
         console.log('success')
         done()
     })
+    pageObject.api.end()
 }

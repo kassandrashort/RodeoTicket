@@ -5,6 +5,7 @@
 
 module.exports = (pageObject, rodeoInfo) => {
     pageObject
+        .navigate()
         .click('@login')
         .waitForElementVisible('@username', 10000)
         .setValue('@username', rodeoInfo.username)
@@ -40,4 +41,9 @@ module.exports = (pageObject, rodeoInfo) => {
         console.log('success')
         done()
     })
+    pageObject
+        .waitForElementPresent('@title', 10000)
+    //pageObject
+        //.expect.element('@title').value.to.contain('@rodeoName')
+    pageObject.api.end()
 }

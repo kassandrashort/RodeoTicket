@@ -18,7 +18,7 @@ module.exports = (pageObject, rodeoInfo) => {
         .setValue('@address', rodeoInfo.address)
         .setValue('@city', rodeoInfo.city)
     pageObject
-        .click('@state')
+        .click(rodeoInfo.state)
         pageObject.api.pause(1000)
         .click(rodeoInfo.state)
         pageObject.api.Keys.ENTER
@@ -70,12 +70,12 @@ module.exports = (pageObject, rodeoInfo) => {
         .click('@save')
         .api.pause(1000)
     pageObject
-    // .expect.element('@venue').text.to.contain(rodeoInfo.rodeoName)
-    // figure this out.
+
 
     pageObject.api.perform(function (done) {
         console.log('success')
         done()
     })
+    pageObject.api.end()
 
 }

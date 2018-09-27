@@ -31,7 +31,9 @@ module.exports = (pageObject, rodeoInfo) => {
         .setValue('@email', rodeoInfo.email)
         //takes away registration form
         .click('@createReg')
+        //add category
         .click('@addCategory')
+        .waitForElementPresent('@catName', 1000)
         .setValue('@catName', rodeoInfo.catName)
         .setValue('@catIndPrice', rodeoInfo.catIndPrice)
         .setValue('@partLimit', rodeoInfo.partLimit)
@@ -46,4 +48,5 @@ module.exports = (pageObject, rodeoInfo) => {
         console.log('success')
         done()
     })
+    pageObject.api.end()
 }
