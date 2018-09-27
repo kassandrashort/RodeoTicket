@@ -22,31 +22,31 @@ module.exports = {
             case84(pageObject, test)
         })
     },
-    //https://dmutah.atlassian.net/browse/Q7K-85
+    // //https://dmutah.atlassian.net/browse/Q7K-85
     'Create Rodeo w/o Registration w/ Category': browser => {
         createData.valid85.forEach(test => {
             case85(pageObject, test)
         })
     },
     //https://dmutah.atlassian.net/browse/Q7K-86
-    'Create Rodeo w/o Registration w/ Category': browser => {
+    'Create Rodeo w/ Existing Payee w/ Category': browser => {
         createData.valid86.forEach(test => {
             case86(pageObject, test)
         })
     },
-    //https://dmutah.atlassian.net/browse/Q7K-87
+    // //https://dmutah.atlassian.net/browse/Q7K-87
     'Create Rodeo w/o Registration w/ Category': browser => {
         createData.valid87.forEach(test => {
             case87(pageObject, test)
         })
     },
-    //https://dmutah.atlassian.net/browse/Q7K-88
+    // //https://dmutah.atlassian.net/browse/Q7K-88
     'Create Rodeo w/o Registration w/ Category': browser => {
         createData.valid88.forEach(test => {
             case88(pageObject, test)
         })
     },
-    //https://dmutah.atlassian.net/browse/Q7K-89
+    // //https://dmutah.atlassian.net/browse/Q7K-89
     'Create Rodeo w/o Registration w/ Category': browser => {
         createData.valid89.forEach(test => {
             case89(pageObject, test)

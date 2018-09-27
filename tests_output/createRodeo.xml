@@ -5,23 +5,23 @@
 
   <testsuite name="createRodeo"
     errors="1" failures="0" hostname="" id="" package="createRodeo" skipped="0"
-    tests="1" time="0.01000" timestamp="Fri, 21 Sep 2018 19:29:49 GMT">
+    tests="1" time="0.01300" timestamp="Wed, 26 Sep 2018 22:12:58 GMT">
   
-    <testcase name="Create Rodeo" classname="createRodeo" time="0.01000" assertions="0">
+    <testcase name="Create Rodeo w/o Registration w/ Category" classname="createRodeo" time="0.01300" assertions="0">
     </testcase>
   
 
   
     <system-err>
-        Error while running [Create Rodeo / Create Rodeo]:
+        Error while running [Create Rodeo / Create Rodeo w/o Registration w/ Category]:
 
   TypeError: Cannot read property &#39;toString&#39; of undefined
     at isElementCommand (/usr/local/lib/node_modules/nightwatch/lib/page-object/command-wrapper.js:131:42)
     at Page.click (/usr/local/lib/node_modules/nightwatch/lib/page-object/command-wrapper.js:72:28)
-    at module.exports (/Users/kassandrashort/DevMountain/RodeoTicket/test-assets/createFunction.js:15:10)
-    at Create Rodeo.createData.valid.forEach.test (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:18:13)
+    at module.exports (/Users/kassandrashort/DevMountain/RodeoTicket/test-assets/case87.js:21:10)
+    at Create Rodeo w/o Registration w/ Category.createData.valid87.forEach.test (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:40:13)
     at Array.forEach (&lt;anonymous&gt;)
-    at Object.Create Rodeo (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:17:26)
+    at Object.Create Rodeo w/o Registration w/ Category (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:39:28)
     at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)

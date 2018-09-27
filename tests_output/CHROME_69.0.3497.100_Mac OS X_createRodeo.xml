@@ -1,20 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
-            failures="0"
+<testsuites errors="2"
+            failures="1"
             tests="1">
 
   <testsuite name="createRodeo"
-    errors="0" failures="0" hostname="" id="" package="createRodeo" skipped="0"
-    tests="1" time="9.484" timestamp="Fri, 21 Sep 2018 20:58:32 GMT">
+    errors="2" failures="1" hostname="" id="" package="createRodeo" skipped="0"
+    tests="1" time="24.93" timestamp="Wed, 26 Sep 2018 22:37:03 GMT">
   
-    <testcase name="Create Rodeo" classname="createRodeo" time="9.484" assertions="2">
+    <testcase name="Create Rodeo w/o Registration w/ Category" classname="createRodeo" time="24.93" assertions="8">
 
     
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;input[name=&#34;username&#34;]&gt; to be present for 10000 milliseconds.">    at module.exports (/Users/kassandrashort/DevMountain/RodeoTicket/test-assets/case87.js:10:10)
+    at Create Rodeo w/o Registration w/ Category.createData.valid87.forEach.test (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:41:13)
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Create Rodeo w/o Registration w/ Category (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:40:28)</failure>
 
     
     </testcase>
   
 
+  
+    <system-err>
+      ERROR: Unable to locate element: &#34;@alabama&#34; using: css selector
+    at module.exports (/Users/kassandrashort/DevMountain/RodeoTicket/test-assets/case87.js:23:10)
+    at Create Rodeo w/o Registration w/ Category.createData.valid87.forEach.test (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:41:13)
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Create Rodeo w/o Registration w/ Category (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:40:28)
+    at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:863:30
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:556:49
+ERROR: Unable to locate element: &#34;a[id=&#34;logInDrawer&#34;]&#34; using: css selector
+    at Page.click (/usr/local/lib/node_modules/nightwatch/lib/page-object/command-wrapper.js:117:25)
+    at module.exports (/Users/kassandrashort/DevMountain/RodeoTicket/test-assets/case87.js:9:10)
+    at Create Rodeo w/o Registration w/ Category.createData.valid87.forEach.test (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:41:13)
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Create Rodeo w/o Registration w/ Category (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:40:28)
+    at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:863:30
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    </system-err>
   
 
   

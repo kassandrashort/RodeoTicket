@@ -5,40 +5,55 @@
 
 module.exports = (pageObject, rodeoInfo) => {
     pageObject
+        //login, get to create rodeo form
         .click('@login')
         .waitForElementVisible('@username', 10000)
-        .setValue('@username', rodeoInfo.fields.username)
-        .setValue('@password', rodeoInfo.fields.password)
+        .setValue('@username', rodeoInfo.username)
+        .setValue('@password', rodeoInfo.password)
         .click('@loginButton')
         .click('@createRodeo')
         .click('@createNew')
-        .setValue('@rodeoName', rodeoInfo.fields.rodeoName)
-        .setValue('@address', rodeoInfo.fields.address)
-        .setValue('@city', rodeoInfo.fields.city)
-        .click(rodeoInfo.fields.state)
-        .click(rodeoInfo.fields.country)
-        .setValue('@zip', rodeoInfo.fields.zip)
-        .click(rodeoInfo.fields.timeZone)
-        .setValue('@dateTime', rodeoInfo.fields.dateTime)
+        //name, where & when, basic rodeo info, contact info
+        .setValue('@rodeoName', rodeoInfo.rodeoName)
+        .setValue('@address', rodeoInfo.address)
+        .setValue('@city', rodeoInfo.city)
+        .click(rodeoInfo.state)
+        .click(rodeoInfo.country)
+        .setValue('@zip', rodeoInfo.zip)
+        .click('@chicago')
+        .setValue('@dateTime', rodeoInfo.dateTime)
         .api.frame('event-description_ifr')
     pageObject
-        .setValue('@description', rodeoInfo.fields.description)
+        .setValue('@description', rodeoInfo.description)
         .api.frameParent()
     pageObject
-        .setValue('@url', rodeoInfo.fields.url)
-        .setValue('@firstName', rodeoInfo.fields.firstName)
-        .setValue('@lastName', rodeoInfo.fields.lastName)
-        .setValue('@email', rodeoInfo.fields.email)
+        .setValue('@url', rodeoInfo.url)
+        .setValue('@firstName', rodeoInfo.firstName)
+        .setValue('@lastName', rodeoInfo.lastName)
+        .setValue('@email', rodeoInfo.email)
+        //add category
         .click('@addCategory')
-        .setValue('@catName', rodeoInfo.fields.catName)
-        .setValue('@catIndPrice', rodeoInfo.fields.catIndPrice)
-        .setValue('@partLimit', rodeoInfo.fields.partLimit)
-        .setValue('@minAge', rodeoInfo.fields.minAge)
-        .setValue('@maxAge', rodeoInfo.fields.maxAge)
-        .setValue('@initials', rodeoInfo.fields.initials)
-        .click('@save')
+        .waitForElementPresent('@catName', 1000)
+        .setValue('@catName', rodeoInfo.catName)
+        .setValue('@catIndPrice', rodeoInfo.catIndPrice)
+        .setValue('@partLimit', rodeoInfo.partLimit)
+        .setValue('@minAge', rodeoInfo.minAge)
+        .setValue('@maxAge', rodeoInfo.maxAge)
+        //registration ends
+        .setValue('@regEnds', rodeoInfo.regEnds)
+        .setValue('@waiver', rodeoInfo.waiver)
+        //use existing payee
+        .click('@existingPayee')
+        .waitForElementPresent('@payee1', 500)
+        .click('@payee1')
+        //click save
+        .setValue('@initials', rodeoInfo.initials)
     pageObject
-    // .expect.element('@venue').text.to.contain(rodeoInfo.fields.rodeoName)
+        .waitForElementVisible('@save', 10000)
+        .click('@save')
+        .api.pause(1000)
+    pageObject
+    // .expect.element('@venue').text.to.contain(rodeoInfo.rodeoName)
     // figure this out.
 
     pageObject.api.perform(function (done) {

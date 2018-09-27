@@ -4,6 +4,7 @@ module.exports = {
 
         //log in
         login: 'a[id="logInDrawer"]',
+        logout: 'a[class="btn-login"]',
         username: 'input[name="username"]',
         password: 'input[name="password"]',
         loginButton: 'button[name="action"]',
@@ -22,7 +23,10 @@ module.exports = {
         address: 'input[id="street"]',
         city: 'input[id="city"]',
         state: 'select[id="state_id"]',
-            alabama: 'select[id="state_id"] option[value="1"]',
+            alabama: {
+                selector: '//*[@id="state_id"]/option[9]',
+                locateStrategy: 'xpath'
+            },
             georgia: 'select[id="state_id"] option[value="10"]',
             maryland: 'select[id="state_id"] option[value="20"]',
         province: 'input[id="province"]',
@@ -85,16 +89,20 @@ module.exports = {
         //checks payable information
         payee: 'select[id="payee_select"]',
             existingPayee: 'select[id="payee_select"] option[value="existing"]',
-                //modal?
-            createpayee: 'select[id="payee_select"] option[value="new"]',
+                payee1: {
+                    selector: '//*[@id="table_row_payees_1217"]/td[1]',
+                    locateStrategy: 'xpath'
+                },
+                payee2: 'tr[id="table_row_payees_1220"]',
+            createPayee: 'select[id="payee_select"] option[value="new"]',
                 entityName: 'input[id="payee-name"]',
-                payeeAddress: 'input[id=payee-address"]',
-                payeeCity: 'input[id=payee-city"]',
+                payeeAddress: 'input[id="payee-address"]',
+                payeeCity: 'input[id="payee-city"]',
                 payeeState: 'select[id="payee_state_id"]',
                     alabama: 'select[id="payee_state_id"] option[value="1"]',
                     georgia: 'select[id="payee_state_id"] option[value="10"]',
                     maryland: 'select[id="payee_state_id"] option[value="20"]',
-                payeeZip: 'input[id=payee-zip"]',
+                payeeZip: 'input[id="payee-zip"]',
                 
 
         //terms and conditions
