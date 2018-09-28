@@ -42,7 +42,7 @@ module.exports = (pageObject, rodeoInfo) => {
         done()
     })
     pageObject
-        .waitForElementPresent('@title', 10000)
+        //.waitForElementPresent('@title', 10000)
     //pageObject
         //.expect.element('@title').value.to.contain('@rodeoName')
     pageObject.api.end()

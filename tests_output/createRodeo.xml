@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="1"
             failures="0"
-            tests="1">
+            tests="6">
 
   <testsuite name="createRodeo"
-    errors="1" failures="0" hostname="" id="" package="createRodeo" skipped="0"
-    tests="1" time="0.01300" timestamp="Wed, 26 Sep 2018 22:12:58 GMT">
+    errors="1" failures="0" hostname="" id="" package="createRodeo" skipped="5"
+    tests="6" time="0.02000" timestamp="Fri, 28 Sep 2018 16:42:49 GMT">
   
-    <testcase name="Create Rodeo w/o Registration w/ Category" classname="createRodeo" time="0.01300" assertions="0">
+    <testcase name="Create Rodeo w/o Registration w/o Category" classname="createRodeo" time="0.02000" assertions="0">
     </testcase>
   
 
   
     <system-err>
-        Error while running [Create Rodeo / Create Rodeo w/o Registration w/ Category]:
+        Error while running [Create Rodeo / Create Rodeo w/o Registration w/o Category]:
 
-  TypeError: Cannot read property &#39;toString&#39; of undefined
-    at isElementCommand (/usr/local/lib/node_modules/nightwatch/lib/page-object/command-wrapper.js:131:42)
-    at Page.click (/usr/local/lib/node_modules/nightwatch/lib/page-object/command-wrapper.js:72:28)
-    at module.exports (/Users/kassandrashort/DevMountain/RodeoTicket/test-assets/case87.js:21:10)
-    at Create Rodeo w/o Registration w/ Category.createData.valid87.forEach.test (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:40:13)
+  Error: title was not found in &#34;pageObject&#34;. Available elements: login,logout,username,password,loginButton,createRodeo,copyExisting,createNew,rodeoName,address,city,state,alabama,georgia,maryland,province,country,usa,zip,timeZone,denver,ny,chicago,phoenix,la,anchorage,honolulu,dateTime,description,url,firstName,lastName,email,createReg,addCategory,catName,partLimit,minAge,maxAge,catInd,catIndPrice,catTeam,cptnPrice,teammatePrice,maxMembers,limitBy,team,part,teamLimit,openRegLater,regOpens,tax,taxRate,waiver,regEnds,payee,existingPayee,payee1,payee2,createPayee,entityName,payeeAddress,payeeCity,payeeState,payeeZip,initials,save,currentEvents,howdy,testing,yeehaw,copyType,nextYear,difRodeo
+    at getElement (/usr/local/lib/node_modules/nightwatch/lib/page-object/command-wrapper.js:13:13)
+    at Page.waitForElementPresent (/usr/local/lib/node_modules/nightwatch/lib/page-object/command-wrapper.js:81:32)
+    at module.exports (/Users/kassandrashort/DevMountain/RodeoTicket/test-assets/case84.js:45:10)
+    at Create Rodeo w/o Registration w/o Category.createData.valid84.forEach.test (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:22:13)
     at Array.forEach (&lt;anonymous&gt;)
-    at Object.Create Rodeo w/o Registration w/ Category (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:39:28)
+    at Object.Create Rodeo w/o Registration w/o Category (/Users/kassandrashort/DevMountain/RodeoTicket/tests/createRodeo.js:21:28)
     at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
@@ -29,6 +29,33 @@
     </system-err>
   
 
+  
+    
+    <testcase
+      name="Create Rodeo w/o Registration w/ Category" classname="createRodeo">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Create Rodeo w/ Existing Payee w/ Category" classname="createRodeo">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Create Rodeo w/ New Payee w/ Category" classname="createRodeo">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Create Rodeo w/ Existing Payee w/o Category" classname="createRodeo">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Create Rodeo w/ New Payee w/o Category" classname="createRodeo">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>

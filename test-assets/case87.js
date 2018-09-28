@@ -19,10 +19,6 @@ module.exports = (pageObject, rodeoInfo) => {
         .setValue('@city', rodeoInfo.city)
     pageObject
         .click(rodeoInfo.state)
-        pageObject.api.pause(1000)
-        .click(rodeoInfo.state)
-        pageObject.api.Keys.ENTER
-        pageObject.api.pause(1000)
         // .click('@georgia')
         //.api.keys([pageObject.api.Keys.DOWN_ARROW, pageObject.api.Keys.DOWN_ARROW, pageObject.api.Keys.ENTER])
     pageObject

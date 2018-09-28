@@ -4,7 +4,7 @@ module.exports = {
         {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'noreg cat 15',
+            rodeoName: 'noreg cat 17',
             address: '5678 rhubard rd',
             city: 'los angelos',
             state: '@alabama',
@@ -44,7 +44,7 @@ module.exports = {
         {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'noreg nocat 5',
+            rodeoName: 'noreg nocat 8',
             address: 'blah blah',
             city: 'los angelos',
             state: '@alabama',
@@ -65,7 +65,7 @@ module.exports = {
        {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'existing category 4',
+            rodeoName: 'existing category 7',
             address: 'okokok',
             city: 'los angelos',
             state: '@alabama',
@@ -93,7 +93,7 @@ module.exports = {
         {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'new payee category 8',
+            rodeoName: 'new payee category 11',
             address: '1234 w',
             city: 'birmingham',
             state: '@alabama',
@@ -128,7 +128,7 @@ module.exports = {
         {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'existing payee nocat 2',
+            rodeoName: 'existing payee nocat 5',
             address: '5678 rhubard rd',
             city: 'los angelos',
             state: '@alabama',
@@ -150,7 +150,7 @@ module.exports = {
         {
             username: 're.directorKassandra@gmail.com',
             password: 'candice1',
-            rodeoName: 'new payee nocat 2',
+            rodeoName: 'new payee nocat 5',
             address: '5678 rhubard rd',
             city: 'los angelos',
             state: '@alabama',
